@@ -120,8 +120,8 @@ class ExchangeBase(PrintError):
 class CoinMarketCap(ExchangeBase):
     def get_rates(self, ccy):
         json = self.get_json('api.coinmarketcap.com',
-                             "/v1/ticker/primecoin?convert=%s")
-        return {'USD': Decimal(json[0]['price_usd'])}
+                             '/v1/ticker/primecoin?convert=EUR')
+        return {'USD': Decimal(json[0]['price_usd']), 'EUR': Decimal(json[0]['price_eur'])}
 
 
 def dictinvert(d):
