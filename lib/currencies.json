@@ -1,7 +1,6 @@
 {
     "CoinMarketCap": [
         "USD",
-        "EUR",
-        "CNY"
+        "EUR"
     ]
 }
